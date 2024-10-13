@@ -214,9 +214,9 @@ async def cb_list(bot, update: CallbackQuery):
 @HKZ.on_message(filters.regex("Titanic"))
 async def regex(client, message):
     await message.reply(
-        text=f"Here is What I Found for Your Query #{query}..!",
+        text=f"Here is What I Found for Your Query #<code>{query}</code>..!",
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton(f"{query} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            InlineKeyboardButton(f"<code>{query}</code> Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
             ]]
             )
         )
