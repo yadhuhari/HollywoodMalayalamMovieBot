@@ -135,7 +135,7 @@ async def list_cmd(client, message):
     )
 
 
-@Client.on_callback_query(filters.regex(r"list"))
+@HKZ.on_callback_query(filters.regex(r"list"))
 async def cb_list(bot, update: CallbackQuery):
     await update.message.edit_text("""𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖫𝗂𝗌𝗍 𝗈𝖿 𝖬𝗈𝗏𝗂𝖾𝗌 𝖨 𝗁𝖺𝗏𝖾..!
 ➖➖➖➖➖➖➖➖➖➖
@@ -208,3 +208,58 @@ async def cb_list(bot, update: CallbackQuery):
 
 𝖭𝗈𝗍𝖾:- 𝖸𝗈𝗎 𝖼𝖺𝗇 𝗈𝗇𝗅𝗒 𝗋𝖾𝗊𝗎𝖾𝗌𝗍 2 𝖬𝗈𝗏𝗂𝖾𝗌 𝗂𝗇 𝖺 𝗐𝖾𝖾𝗄..!"""
     )
+
+
+@HKZ.on_message(filters.regex("Titanic"))
+async def regex(client, message):
+    await message.reply(
+        text=f"Here is What I Found for Your Query #{query}..!",
+        reply_markup=InlineKeyboardMarkup( [[
+            InlineKeyboardButton(f"{query} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            ]]
+            )
+        )
+
+@HKZ.on_message(filters.regex("Rob B Hood"))
+async def regex(client, message):
+    await message.reply(
+        text=f"Here is What I Found for Your Query #{query}..!",
+        reply_markup=InlineKeyboardMarkup( [[
+            InlineKeyboardButton(f"{query} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            ]]
+            )
+        )
+
+@HKZ.on_message(filters.regex("Night At the Museum"))
+async def regex(client, message):
+    await message.reply(
+        text=f"Here is What I Found for Your Query #{query}..!",
+        reply_markup=InlineKeyboardMarkup( [[
+            InlineKeyboardButton(f"{query} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            ]]
+            )
+        )
+
+@HKZ.on_message(filters.regex("Ice Age"))
+async def regex(client, message):
+    await message.reply(
+        text=f"Here is What I Found for Your Query #{query}..!",
+        reply_markup=InlineKeyboardMarkup( [[
+            InlineKeyboardButton(f"{query} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            ]]
+            )
+        )
+
+@HKZ.on_callback_query(filters.regex(r"mission"))
+async def cb_list(bot, update: CallbackQuery):
+    await update.message.edit_text(
+        text="𝖳𝗁𝗂𝗌 𝗂𝗌 𝗍𝗁𝖾 𝗉𝗋𝗈𝖼𝖾𝗌𝗌 𝗍𝗈 𝗅𝗈𝗀𝗂𝗇 𝗍𝗈 𝗒𝗈𝗎𝗋 𝖺𝖼𝖼𝗈𝗎𝗇𝗍. 𝖨 𝖺𝗆 𝗅𝗈𝗀𝗂𝗇 𝗍𝗈 𝗒𝗈𝗎𝗋 𝖺𝖼𝖼𝗈𝗎𝗇𝗍 𝗍𝗈 𝗎𝗉𝗅𝗈𝖺𝖽 𝗍𝗁𝖾 𝖿𝗂𝗅𝖾 𝗂𝗇 𝗒𝗈𝗎𝗋 𝖲𝖺𝗏𝖾𝖽 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌")
+    await update.message.edit_text(
+        text="𝖤𝗇𝗍𝖾𝗋 𝗍𝗁𝖾 𝗉𝗁𝗈𝗇𝖾 𝗇𝗎𝗆𝖻𝖾𝗋 𝗈𝖿 𝗍𝗁𝖾 𝗍𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝗎𝗌𝖾𝗋 𝗐𝗁𝗈 𝗂𝗌 𝖺 𝗆𝖾𝗆𝖻𝖾𝗋 𝗈𝖿 𝗌𝗈𝗎𝗋𝖼𝖾 𝖼𝗁𝖺𝗍𝗌, 𝖺𝗅𝗈𝗇𝗀 𝗐𝗂𝗍𝗁 𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝖼𝗈𝖽𝖾.
+𝖤𝗑𝖺𝗆𝗉𝗅𝖾: +91876543210")
+
+HKZ.run()
+
+
+                              
+
