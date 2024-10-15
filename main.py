@@ -213,7 +213,7 @@ async def cb_list(bot, update: CallbackQuery):
     )
 
 
-@HKZ.on_message(filters.text("Titanic"))
+@HKZ.on_message(filters.text)
 async def titanic_txt(client, message):
     await message.reply(
         text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
@@ -223,7 +223,7 @@ async def titanic_txt(client, message):
             )
         )
 
-@HKZ.on_message(filters.text("Rob B Hood"))
+@HKZ.on_message(filters.text)
 async def robbhood_txt(client, message):
     await message.reply(
         text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
@@ -233,7 +233,7 @@ async def robbhood_txt(client, message):
             )
         )
 
-@HKZ.on_message(filters.text("Night At the Museum"))
+@HKZ.on_message(filters.text)
 async def natm_txt(client, message):
     await message.reply(
         text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
@@ -243,7 +243,7 @@ async def natm_txt(client, message):
             )
         )
 
-@HKZ.on_message(filters.text("Ice Age"))
+@HKZ.on_message(filters.text)
 async def iceage_txt(client, message):
     await message.reply(
         text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
