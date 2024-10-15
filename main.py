@@ -11,7 +11,9 @@ HKZ = Client(
 )
 
 PICS = [
- "http://ibb.co/tmwS2Gx"
+ "http://ibb.co/PrcK70c"
+ "http://ibb.co/Bfycx7T"
+ "http://ibb.co/2sk5Sn6"
 ]
 
 @HKZ.on_message(filters.command("start"))
@@ -211,42 +213,42 @@ async def cb_list(bot, update: CallbackQuery):
     )
 
 
-@HKZ.on_message(filters.regex("Titanic"))
-async def regex(client, message):
+@HKZ.on_message(filters.text("Titanic"))
+async def titanic_txt(client, message):
     await message.reply(
-        text=f"Here is What I Found for Your Query #<code>{query}</code>..!",
+        text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton(f"<code>{query}</code> Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            InlineKeyboardButton(f"<b>{message.text}</b> Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv</b>", callback_data="mission")
             ]]
             )
         )
 
-@HKZ.on_message(filters.regex("Rob B Hood"))
-async def regex(client, message):
+@HKZ.on_message(filters.text("Rob B Hood"))
+async def robbhood_txt(client, message):
     await message.reply(
-        text=f"Here is What I Found for Your Query #<code>{query}</code>..!",
+        text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton(f"<code>{query}</code> Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            InlineKeyboardButton(f"<b>{message.text} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv</b>", callback_data="mission")
             ]]
             )
         )
 
-@HKZ.on_message(filters.regex("Night At the Museum"))
-async def regex(client, message):
+@HKZ.on_message(filters.text("Night At the Museum"))
+async def natm_txt(client, message):
     await message.reply(
-        text=f"Here is What I Found for Your Query #{query}..!",
+        text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton(f"{query} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            InlineKeyboardButton(f"<b>{message.text} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv</b>", callback_data="mission")
             ]]
             )
         )
 
-@HKZ.on_message(filters.regex("Ice Age"))
-async def regex(client, message):
+@HKZ.on_message(filters.text("Ice Age"))
+async def iceage_txt(client, message):
     await message.reply(
-        text=f"Here is What I Found for Your Query #{query}..!",
+        text=f"<b>Here is What I Found for Your Query #{message.text}</b>..!",
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton(f"{query} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv", callback_data="mission")
+            InlineKeyboardButton(f"<b>{message.text} Malayalam Dubbed Full Movie @HollywoodMalayalamMovieBot.mkv</b>", callback_data="mission")
             ]]
             )
         )
