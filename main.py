@@ -138,9 +138,11 @@ async def list_cmd(client, message):
     )
 
 
-@HKZ.on_callback_query(filters.regex(r"list"))
-async def cb_list(bot, update: CallbackQuery):
-    await update.message.edit_text("""𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖫𝗂𝗌𝗍 𝗈𝖿 𝖬𝗈𝗏𝗂𝖾𝗌 𝖨 𝗁𝖺𝗏𝖾..!
+@HKZ.on_callback_query()
+async def callback(bot, msg):
+
+    if msg.data == "list"
+        await msg.message.edit("""𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖫𝗂𝗌𝗍 𝗈𝖿 𝖬𝗈𝗏𝗂𝖾𝗌 𝖨 𝗁𝖺𝗏𝖾..!
 ➖➖➖➖➖➖➖➖➖➖
 
 300
@@ -210,7 +212,7 @@ async def cb_list(bot, update: CallbackQuery):
 𝖵𝖾𝗇𝗈𝗆: 𝖫𝖾𝗍 𝗍𝗁𝖾𝗋𝖾 𝖻𝖾 𝖢𝖺𝗋𝗇𝖺𝗀𝖾
 
 𝖭𝗈𝗍𝖾:- 𝖸𝗈𝗎 𝖼𝖺𝗇 𝗈𝗇𝗅𝗒 𝗋𝖾𝗊𝗎𝖾𝗌𝗍 2 𝖬𝗈𝗏𝗂𝖾𝗌 𝗂𝗇 𝖺 𝗐𝖾𝖾𝗄..!"""
-    )
+        )
 
 
 @HKZ.on_message(filters.text)
