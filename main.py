@@ -242,6 +242,7 @@ async def natm_txt(client, message):
             ]]
             )
         )
+    
 
 @HKZ.on_message(filters.text)
 async def iceage_txt(client, message):
