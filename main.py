@@ -10,10 +10,15 @@ HKZ = Client(
     bot_token= "7788724835:AAFgateQxHSVuVijaetiV4FaTDJ9dFrsP9g"
 )
 
+PICS = [
+ "https://files.catbox.moe/0lpzv8.jpg"
+]
+
 @HKZ.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply_text(
-        text=f"""𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾 {message.from_user.mention},
+    await message.reply_photo(
+        photo=random.choice(PICS),
+        caption=f"""𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾 {message.from_user.mention},
 
 ```𝖨 𝖺𝗆 [𝖤𝗅𝗂𝗓𝖺𝖻𝖾𝗍𝗁 𝖮𝗅𝗌𝖾𝗇](t.me/HollywoodMalayalamMovieBot), 𝖨 𝖼𝖺𝗇 𝗌𝗁𝖺𝗋𝖾 𝗒𝗈𝗎 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆 𝖣𝗎𝖻𝖻𝖾𝖽 𝖧𝗈𝗅𝗅𝗒𝗐𝗈𝗈𝖽 𝖬𝗈𝗏𝗂𝖾𝗌. 𝖩𝗎𝗌𝗍 𝖲𝖾𝗇𝖽 𝖬𝖾 𝗍𝗁𝖾 𝖬𝗈𝗏𝗂𝖾 𝖭𝖺𝗆𝖾 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍.
 
@@ -56,8 +61,8 @@ async def help_cmd(client, message):
 
 @HKZ.on_message(filters.command("list"))
 async def list_cmd(client, message):
-    await message.reply_text(
-        text="""𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖫𝗂𝗌𝗍 𝗈𝖿 𝖬𝗈𝗏𝗂𝖾𝗌 𝖨 𝗁𝖺𝗏𝖾..!
+    await message.reply_photo(
+        photo="""𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖫𝗂𝗌𝗍 𝗈𝖿 𝖬𝗈𝗏𝗂𝖾𝗌 𝖨 𝗁𝖺𝗏𝖾..!
 ➖➖➖➖➖➖➖➖➖➖
 
 300
