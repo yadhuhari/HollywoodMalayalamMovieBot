@@ -12,7 +12,7 @@ HKZ = Client(
 
 @HKZ.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply_photo(
+    await message.reply(
         text=f"""𝖧𝖾𝗒 𝗍𝗁𝖾𝗋𝖾 {message.from_user.mention},
 
 ```𝖨 𝖺𝗆 [𝖤𝗅𝗂𝗓𝖺𝖻𝖾𝗍𝗁 𝖮𝗅𝗌𝖾𝗇](t.me/HollywoodMalayalamMovieBot), 𝖨 𝖼𝖺𝗇 𝗌𝗁𝖺𝗋𝖾 𝗒𝗈𝗎 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆 𝖣𝗎𝖻𝖻𝖾𝖽 𝖧𝗈𝗅𝗅𝗒𝗐𝗈𝗈𝖽 𝖬𝗈𝗏𝗂𝖾𝗌. 𝖩𝗎𝗌𝗍 𝖲𝖾𝗇𝖽 𝖬𝖾 𝗍𝗁𝖾 𝖬𝗈𝗏𝗂𝖾 𝖭𝖺𝗆𝖾 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍.
@@ -26,7 +26,7 @@ async def start_cmd(client, message):
 
 @HKZ.on_message(filters.command("help"))
 async def help_cmd(client, message):
-    await message.reply_photo(
+    await message.reply(
         text=f"""𝖧𝖾𝗒 {message.from_user.mention},
 
 𝖳𝗁𝗂𝗌 𝗂𝗌 𝗆𝗒 𝗁𝖾𝗅𝗉 𝗉𝖺𝗇𝖾𝗅...!
