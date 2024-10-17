@@ -7,7 +7,7 @@ HKZ = Client(
     name="HollywoodMalayalamMovieBot",
     api_id= "25988816",
     api_hash= "7ad4c2b1e5556277d341477b0776b2de",
-    bot_token= "7788724835:AAFgateQxHSVuVijaetiV4FaTDJ9dFrsP9g"
+    bot_token= "8127557975:AAGcuavIDOjKQcMpS6VqjkBENh6IT6JLwD0"
 )
 
 PICS = [
